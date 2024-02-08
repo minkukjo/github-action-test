@@ -18,6 +18,6 @@ jobs:
          - name: Merge release to develop
            run: |
               branch="${{ github.ref_name }}"
-              gh pr create --base $branch --head develop --title "Merge: develop <- release" --body "## Merge 내용
+              gh pr create --base develop --head $branch --title "Merge: develop <- release" --body "## Merge 내용
               \`develop\` 브랜치에 \`release\` 브랜치를 병합합니다.
               ### Create a merge commit"
