@@ -4,6 +4,8 @@ on:
    push:
       branches:
          - 'release/**'
+env:
+    GH_TOKEN: ${{ github.token }}
 
 jobs:
    merge:
